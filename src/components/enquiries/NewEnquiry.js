@@ -160,6 +160,17 @@ const DateRange = styled(DateRangeInput)`
   z-index: 2;
 `;
 
+const Errors = styled.p`
+  color: red;
+  float: left;
+  margin: 1rem 3rem;
+`;
+const Status = styled.p`
+  margin: 2rem;
+  font-size: 20px;
+  color: rgba(255, 112, 0);
+`;
+
 const initialState = {
   startDate: null,
   endDate: null,
@@ -209,9 +220,11 @@ function NewEnquiry() {
       <FormWrap>
         <Form onSubmit={handleSubmit(onSubmit)}>
           {status === "success" && (
-            <p>Your enquiry has been sent. Thank you!</p>
+            <Status>Your enquiry has been sent. Thank you!</Status>
           )}
-          {status === "error" && <p>Something went wrong. Please try again!</p>}
+          {status === "error" && (
+            <Status>Something went wrong. Please try again!</Status>
+          )}
           <H2>New Enquiry</H2>
           <InputLine>
             {" "}
@@ -221,7 +234,7 @@ function NewEnquiry() {
               name="firstname"
               ref={register}
             />
-            {errors.firstname && <p>{errors.firstname.message}</p>}
+            {errors.firstname && <Errors>{errors.firstname.message}</Errors>}
           </InputLine>
           <InputLine>
             <InputField
@@ -230,7 +243,7 @@ function NewEnquiry() {
               name="lastname"
               ref={register}
             />
-            {errors.lastname && <p>{errors.lastname.message}</p>}
+            {errors.lastname && <Errors>{errors.lastname.message}</Errors>}
           </InputLine>
           <InputLine>
             <InputField
@@ -239,7 +252,7 @@ function NewEnquiry() {
               name="email"
               ref={register}
             />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && <Errors>{errors.email.message}</Errors>}
           </InputLine>
           <InputLine>
             <InputField
@@ -248,7 +261,9 @@ function NewEnquiry() {
               name="establishmentId"
               ref={register}
             />
-            {errors.establishmentId && <p>{errors.establishmentId.message}</p>}
+            {errors.establishmentId && (
+              <Errors>{errors.establishmentId.message}</Errors>
+            )}
           </InputLine>
           <DateLine>
             <DateRange

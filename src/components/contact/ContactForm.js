@@ -166,6 +166,17 @@ const Link = styled(StyledLink)`
   margin: 0;
 `;
 
+const Errors = styled.p`
+  color: red;
+  float: left;
+  margin: 1rem 3rem;
+`;
+const Status = styled.p`
+  margin: 2rem;
+  font-size: 20px;
+  color: rgba(255, 112, 0);
+`;
+
 function ContactForm() {
   const [status, setStatus] = useState("idle");
 
@@ -194,9 +205,11 @@ function ContactForm() {
       <FormWrap>
         <Form onSubmit={handleSubmit(onSubmit)}>
           {status === "success" && (
-            <p>Your message has been sent. Thank you!</p>
+            <Status>Your message has been sent. Thank you!</Status>
           )}
-          {status === "error" && <p>Something went wrong. Please try again!</p>}
+          {status === "error" && (
+            <Status>Something went wrong. Please try again!</Status>
+          )}
           <FormH2>Contact Form</FormH2>
           <InputLine>
             {" "}
@@ -206,7 +219,7 @@ function ContactForm() {
               name="firstname"
               ref={register}
             />
-            {errors.firstname && <p>{errors.firstname.message}</p>}
+            {errors.firstname && <Errors>{errors.firstname.message}</Errors>}
           </InputLine>
           <InputLine>
             <InputField
@@ -215,7 +228,7 @@ function ContactForm() {
               name="lastname"
               ref={register}
             />
-            {errors.lastname && <p>{errors.lastname.message}</p>}
+            {errors.lastname && <Errors>{errors.lastname.message}</Errors>}
           </InputLine>
           <InputLine>
             <InputField
@@ -224,7 +237,7 @@ function ContactForm() {
               name="email"
               ref={register}
             />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && <Errors>{errors.email.message}</Errors>}
           </InputLine>
           <InputLine>
             <InputMessage
@@ -232,7 +245,7 @@ function ContactForm() {
               placeholder="Write your message here..."
               ref={register}
             />
-            {errors.message && <p>{errors.message.message}</p>}
+            {errors.message && <Errors>{errors.message.message}</Errors>}
           </InputLine>
           <InputLine>
             <StyledButton type="submit">Submit</StyledButton>

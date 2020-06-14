@@ -143,6 +143,17 @@ const StyledButton = styled(Button)`
   margin: 2rem 0 1rem 0;
 `;
 
+const Errors = styled.p`
+  color: red;
+  float: left;
+  margin: 1rem 3rem;
+`;
+const Status = styled.p`
+  margin: 2rem;
+  font-size: 20px;
+  color: rgba(255, 112, 0);
+`;
+
 function NewEstablishment() {
   const [status, setStatus] = useState("idle");
 
@@ -183,9 +194,11 @@ function NewEstablishment() {
       <Wrap2>
         <ContactForm onSubmit={handleSubmit(onSubmit)}>
           {status === "success" && (
-            <p>The new establishment has been added to the list!</p>
+            <Status>The new establishment has been added to the list!</Status>
           )}
-          {status === "error" && <p>Something went wrong. Please try again!</p>}
+          {status === "error" && (
+            <Status>Something went wrong. Please try again!</Status>
+          )}
           <H2>New Establishment</H2>
           <InputLine>
             {" "}
@@ -195,7 +208,7 @@ function NewEstablishment() {
               name="name"
               ref={register}
             />
-            {errors.firstname && <p>{errors.name.message}</p>}
+            {errors.firstname && <Errors>{errors.name.message}</Errors>}
           </InputLine>
 
           <InputLine>
@@ -205,7 +218,7 @@ function NewEstablishment() {
               name="email"
               ref={register}
             />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && <Errors>{errors.email.message}</Errors>}
           </InputLine>
           <InputLine>
             <InputField
@@ -214,7 +227,7 @@ function NewEstablishment() {
               name="image"
               ref={register}
             />
-            {errors.image && <p>{errors.image.message}</p>}
+            {errors.image && <Errors>{errors.image.message}</Errors>}
           </InputLine>
           <InputLine>
             <StyledButton type="submit">Submit</StyledButton>
