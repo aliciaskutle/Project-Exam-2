@@ -17,7 +17,6 @@ const CardWrap = styled.div`
     width: 70%;
   }
 `;
-
 const Card = styled.div`
   width: 300px;
   height: 550px;
@@ -32,7 +31,6 @@ const Card = styled.div`
     height: 530px;
   }
 `;
-
 const CardImg = styled.img`
   height: 200px;
   width: 300px;
@@ -43,11 +41,9 @@ const CardImg = styled.img`
     width: 350px;
   }
 `;
-
 const CardBody = styled.div`
   margin: 30px;
 `;
-
 const CardTitle = styled.h2`
   margin: 0;
   padding: 0;
@@ -56,7 +52,6 @@ const CardTitle = styled.h2`
     font-size: 20px;
   }
 `;
-
 const InfoWrap = styled.div`
   display: flex;
   flex-direction: row;
@@ -65,7 +60,6 @@ const InfoWrap = styled.div`
 const Info = styled.div`
   margin: 20px;
 `;
-
 const CardText = styled.p`
   margin: 0;
 `;

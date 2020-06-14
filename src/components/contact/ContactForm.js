@@ -40,7 +40,6 @@ const Wrap = styled.div`
     justify-content: space-evenly;
   }
 `;
-
 const FormWrap = styled.div`
   flex: 1;
   display: flex;
@@ -63,7 +62,6 @@ const Form = styled.form`
     padding: 1rem;
   }
 `;
-
 const InfoWrap = styled.div`
   flex: 1;
   display: flex;
@@ -86,7 +84,6 @@ const Info = styled.div`
     padding: 2rem;
   }
 `;
-
 const FormH2 = styled.h2`
   font-size: 25px;
   color: black;
@@ -94,7 +91,6 @@ const FormH2 = styled.h2`
     font-size: 30px;
   }
 `;
-
 const InputLine = styled.li`
   list-style: none;
   margin: 1rem;
@@ -102,7 +98,6 @@ const InputLine = styled.li`
     margin: 1rem;
   }
 `;
-
 const InputField = styled.input`
   color: black;
   font-family: "Rubik", sans-serif;
@@ -122,7 +117,6 @@ const InputField = styled.input`
     width: 500px;
   }
 `;
-
 const InputMessage = styled.textarea`
   font-family: "Rubik", sans-serif;
   padding: 0.8rem;
@@ -142,11 +136,9 @@ const InputMessage = styled.textarea`
     width: 500px;
   }
 `;
-
 const StyledButton = styled(Button)`
   margin-left: 0;
 `;
-
 const InfoH2 = styled.h2`
   font-size: 30px;
   color: black;
@@ -156,16 +148,13 @@ const InfoH3 = styled.h3`
   color: black;
   margin: 40px 0 0 0;
 `;
-
 const InfoText = styled.p``;
-
 const InfoPhone = styled.p`
   color: black;
 `;
 const Link = styled(StyledLink)`
   margin: 0;
 `;
-
 const Errors = styled.p`
   color: red;
   float: left;
@@ -197,7 +186,6 @@ function ContactForm() {
       .catch((error) => {
         setStatus("error");
       });
-    console.log("data", contact);
   }
 
   return (

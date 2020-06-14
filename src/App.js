@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-//import styled from "styled-components";
 import Header from "./components/main/Header";
 import Home from "./components/main/Home";
 import Footer from "./components/main/Footer";
@@ -20,7 +19,6 @@ import Establishments from "./components/establishments/Establishments";
 function App() {
   // Similar to useState but first arg is key to the value in local storage.
   const [loggedIn, setLoggedIn] = useLocalStorage("loggedIn", false);
-  console.log(loggedIn);
 
   return (
     <div>

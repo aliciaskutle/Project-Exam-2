@@ -20,7 +20,6 @@ const DetailsWrap = styled.div`
     width: 60%;
   }
 `;
-
 const DetailsImg = styled.img`
   max-height: 300px;
   width: 100%;
@@ -31,13 +30,11 @@ const DetailsImg = styled.img`
     max-height: 600px;
   }
 `;
-
 const DetailsTitle = styled.h2`
   margin: 1rem 0.5rem;
   padding: 0;
   text-align: left;
 `;
-
 const InfoWrap1 = styled.div`
   display: flex;
   flex-direction: row;
@@ -70,12 +67,10 @@ const StyledMaps = styled.div`
   flex: 1;
   margin: 0 auto;
 `;
-
 const StyledLoader = styled(Loader)`
   margin-top: 150px;
   text-align: center;
 `;
-
 const Link = styled(StyledLink)`
   margin: 2rem;
 `;
@@ -89,7 +84,6 @@ function EstablishmentDetails() {
   useEffect(() => {
     getEstablishmentByID(id)
       .then((json) => {
-        console.log(json);
         setDetails(json);
       })
       .catch((error) => console.log(error))
@@ -131,7 +125,6 @@ function EstablishmentDetails() {
           )}
         </Info>
       </InfoWrap1>
-
       <InfoWrap2>
         {" "}
         <DetailsText>{details.description}</DetailsText>

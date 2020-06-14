@@ -74,7 +74,6 @@ const ListItem = styled.li`
   display: flex;
   align-items: center;
 `;
-
 const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
@@ -88,11 +87,9 @@ const StyledLink = styled(Link)`
     cursor: pointer;
   }
 `;
-
 const LinkName = styled.span`
   margin-left: 0.5rem;
 `;
-
 const StyledSearch = styled(BsSearch)`
   width: 40px;
   height: 40px;
@@ -152,14 +149,12 @@ const Nav = styled.nav`
   padding: 10px 20px;
   background-color: rgb(0, 0, 0, 0.1);
 `;
-
 const LogoLink = styled(Links)`
   border: 0;
   outline: none;
   inline: none;
   text-decoration: none;
 `;
-
 const LogoutButton = styled.button`
   display: flex;
   background: rgb(211, 211, 211);

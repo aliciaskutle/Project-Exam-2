@@ -41,7 +41,6 @@ const Wrap = styled.div`
     justify-content: space-evenly;
   }
 `;
-
 const H2 = styled.h2`
   font-size: 25px;
   color: black;
@@ -49,12 +48,10 @@ const H2 = styled.h2`
     font-size: 30px;
   }
 `;
-
 const FormWrap = styled.div`
   flex: 1;
   display: flex;
   width: 100%;
-
   @media (min-width: 620px) {
     justify-content: center;
     padding: 2rem;
@@ -63,7 +60,6 @@ const FormWrap = styled.div`
     justify-content: flex-end;
   }
 `;
-
 const Form = styled.form`
   width: 100%;
   height: 100%;
@@ -74,7 +70,6 @@ const Form = styled.form`
     padding: 1rem;
   }
 `;
-
 const InputLine = styled.li`
   list-style: none;
   margin: 1rem;
@@ -82,7 +77,6 @@ const InputLine = styled.li`
     margin: 1rem;
   }
 `;
-
 const DateLine = styled.li`
   list-style: none;
   margin: 1rem;
@@ -91,7 +85,6 @@ const DateLine = styled.li`
   display: flex;
   justify-content: center;
 `;
-
 const InputField = styled.input`
   font-family: "Rubik", sans-serif;
   padding: 0.8rem;
@@ -111,7 +104,6 @@ const InputField = styled.input`
     width: 500px;
   }
 `;
-
 const InfoWrap = styled.div`
   flex: 1;
   display: flex;
@@ -124,7 +116,6 @@ const InfoWrap = styled.div`
     justify-content: flex-start;
   }
 `;
-
 const Info = styled.div`
   width: 100%;
   height: 100%;
@@ -135,7 +126,6 @@ const Info = styled.div`
     padding: 2rem;
   }
 `;
-
 const InfoH2 = styled.h2`
   font-size: 30px;
   color: black;
@@ -145,21 +135,16 @@ const InfoH3 = styled.h3`
   color: black;
   margin: 40px 0 0 0;
 `;
-
 const InfoText = styled.p``;
-
 const InfoPhone = styled.p`
   color: black;
 `;
-
 const StyledButton = styled(Button)`
   margin-left: 0;
 `;
-
 const DateRange = styled(DateRangeInput)`
   z-index: 2;
 `;
-
 const Errors = styled.p`
   color: red;
   float: left;
@@ -212,7 +197,6 @@ function NewEnquiry() {
       .catch((error) => {
         setStatus("error");
       });
-    console.log("data", enquiry);
   }
 
   return (
@@ -257,7 +241,7 @@ function NewEnquiry() {
           <InputLine>
             <InputField
               type="text"
-              placeholder="Establishment ID"
+              placeholder="Establishment Name"
               name="establishmentId"
               ref={register}
             />

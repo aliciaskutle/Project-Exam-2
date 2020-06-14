@@ -17,7 +17,6 @@ function Establishments() {
   useEffect(() => {
     getEstablishments()
       .then((json) => {
-        console.log(json);
         setEstablishments(json);
       })
       .catch((error) => console.log(error))

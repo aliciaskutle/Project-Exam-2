@@ -10,7 +10,6 @@ const BackgroundImg = styled.img`
   width: 100%;
   object-fit: cover;
 `;
-
 const HeadingWrap = styled.div`
   position: relative;
   margin-left: 20px;
@@ -28,7 +27,6 @@ const HeadingWrap = styled.div`
     margin-top: -450px;
   }
 `;
-
 const Heading1 = styled.h1`
   color: black;
   font-size: 25px;
@@ -75,7 +73,6 @@ const Heading3 = styled.h1`
     font-size: 45px;
   }
 `;
-
 const StyledButton = styled(StyledLink)`
   margin: 0 0 0 20px;
   width: 100px;
@@ -91,12 +88,10 @@ const StyledButton = styled(StyledLink)`
     margin-left: 120px;
   }
 `;
-
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
 const SnapScroll = styled.div`
   text-align: center;
   overflow-y: scroll;
@@ -171,7 +166,6 @@ const AboutLogo4 = styled(BsChatDots)`
 const Info = styled.div`
   flex: 4;
 `;
-
 const CardWrap = styled.div`
   width: 70%;
   margin: 50px auto;
@@ -179,7 +173,6 @@ const CardWrap = styled.div`
   flex-flow: row wrap;
   justify-content: space-around;
 `;
-
 const Card = styled.div`
   width: 300px;
   height: 100%;
@@ -187,12 +180,10 @@ const Card = styled.div`
   background-color: white;
   box-shadow: 1px 1px 10px 1px lightgrey;
 `;
-
 const CardImg = styled.img`
   height: 180px;
   width: 300px;
 `;
-
 const StyledLoader = styled(Loader)`
   margin-top: 150px;
   text-align: center;
@@ -211,7 +202,6 @@ function Home() {
   useEffect(() => {
     getEstablishments()
       .then((json) => {
-        console.log(json);
         setEstablishments(json);
       })
       .catch((error) => console.log(error))

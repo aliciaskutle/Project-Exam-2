@@ -7,7 +7,6 @@ import Loader from "react-loader-spinner";
 const SearchWrap = styled.div`
   text-align: center;
 `;
-
 const SearchBar = styled.input`
   font-family: "Rubik", sans-serif;
   padding: 15px;
@@ -24,7 +23,6 @@ const SearchBar = styled.input`
     outline: 2px solid black;
   }
 `;
-
 const StyledLoader = styled(Loader)`
   margin-top: 150px;
   text-align: center;
@@ -38,7 +36,6 @@ function Search() {
   useEffect(() => {
     getEstablishments()
       .then((json) => {
-        console.log(json);
         setEstablishments(json);
       })
       .catch((error) => console.log(error))

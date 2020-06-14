@@ -17,7 +17,6 @@ function Enquiries() {
   useEffect(() => {
     getEnquiries()
       .then((json) => {
-        console.log(json);
         setEnquiries(json);
       })
       .catch((error) => console.log(error))

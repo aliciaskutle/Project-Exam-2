@@ -16,7 +16,6 @@ const Wrap = styled.div`
     width: 80%;
   }
 `;
-
 const Wrap2 = styled.div`
   height: 100vh;
   display: flex;
@@ -26,7 +25,6 @@ const Wrap2 = styled.div`
   align-items: center;
   flex-direction: column;
 `;
-
 const LoginForm = styled.form`
   width: 300px;
   height: 400px;
@@ -41,11 +39,9 @@ const LoginForm = styled.form`
     height: 400px;
   }
 `;
-
 const H1 = styled.h1`
   font-size: 1.5rem;
 `;
-
 const InputField = styled.input`
   font-family: "Rubik", sans-serif;
   padding: 0.8rem;
@@ -61,11 +57,9 @@ const InputField = styled.input`
     width: 300px;
   }
 `;
-
 const StyledButton = styled(Button)`
   margin: 1.5rem;
 `;
-
 const AdminHead = styled.div`
   display: flex;
   flex-direction: column;
@@ -81,7 +75,6 @@ const AdminHead = styled.div`
     justify-content: space-around;
   }
 `;
-
 const AdminRight = styled.div`
   flex: 1;
   flex-direction: column;
@@ -95,7 +88,6 @@ const AdminRight = styled.div`
     border-left: 1px solid black;
   }
 `;
-
 const AdminLeft = styled.div`
   flex: 2;
   margin: 1rem;
@@ -105,7 +97,6 @@ const AdminText = styled.p`
   color: black;
   font-size: 1.2rem;
 `;
-
 const AdminTasks = styled.div`
   display: flex;
   justify-content: space-around;
@@ -138,7 +129,6 @@ const Task = styled(Link)`
     height: 200px;
   }
 `;
-
 const H2 = styled.h2`
   text-transform: uppercase;
   color: black;
@@ -150,7 +140,6 @@ const H2 = styled.h2`
     font-size: 20px;
   }
 `;
-
 const TaskText = styled.p`
   color: black;
   font-size: 1rem;
@@ -159,11 +148,9 @@ const TaskText = styled.p`
 function Login(props) {
   function handleLogin() {
     props.setLoggedIn(true);
-    console.log(props.loggedIn);
   }
   function handleLogout() {
     props.setLoggedIn(false);
-    console.log(props.loggedIn);
   }
 
   if (props.loggedIn === "true") {
@@ -219,8 +206,5 @@ function Login(props) {
     </Wrap2>
   );
 }
-
-//{loggedIn === "true" && <p>You are now logged in!</p>}
-//{loggedIn === "false" && <p>Log in to see admin dashboard</p>}
 
 export default Login;

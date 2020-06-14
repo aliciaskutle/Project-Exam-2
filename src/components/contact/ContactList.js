@@ -18,7 +18,6 @@ const CardWrap = styled.div`
     width: 80%;
   }
 `;
-
 const H1 = styled.h1`
   font-size: 1.5rem;
 `;
@@ -37,7 +36,6 @@ const AdminHead = styled.div`
     justify-content: space-around;
   }
 `;
-
 const AdminRight = styled.div`
   flex: 1;
   flex-direction: column;
@@ -46,7 +44,6 @@ const AdminRight = styled.div`
   margin: 1rem;
   padding: 2rem;
 `;
-
 const AdminLeft = styled.div`
   border-bottom: 1px solid black;
   flex: 2;
@@ -61,7 +58,6 @@ const AdminText = styled.p`
   color: black;
   font-size: 1.2rem;
 `;
-
 const Card = styled.div`
   width: 100%;
   height: 100%;
@@ -80,20 +76,16 @@ const Card = styled.div`
 const CardH2 = styled.h2`
   font-size: 1.1rem;
 `;
-
 const ContactInfo = styled.div`
   flex: 2;
 `;
-
 const ContactMessage = styled.div`
   flex: 3;
   @media (min-width: 767px) {
     margin: 0 0.5rem;
   }
 `;
-
 const CardText = styled.p``;
-
 const CardLink = styled.div`
   flex: 1;
   margin: 3rem 0;
@@ -108,11 +100,9 @@ const Link = styled(StyledLink)`
     margin: 1rem;
   }
 `;
-
 const StyledButton = styled(Button)`
   width: 130px;
 `;
-
 const StyledLoader = styled(Loader)`
   margin-bottom: 0.5rem;
   text-align: center;

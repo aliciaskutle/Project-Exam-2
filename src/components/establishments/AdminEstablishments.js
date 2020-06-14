@@ -20,7 +20,6 @@ const CardWrap = styled.div`
     width: 80%;
   }
 `;
-
 const H1 = styled.h1`
   font-size: 1.5rem;
 `;
@@ -39,7 +38,6 @@ const AdminHead = styled.div`
     justify-content: space-around;
   }
 `;
-
 const AdminRight = styled.div`
   flex: 1;
   flex-direction: column;
@@ -48,7 +46,6 @@ const AdminRight = styled.div`
   margin: 1rem;
   padding: 2rem;
 `;
-
 const AdminText = styled.p`
   color: black;
   font-size: 1.2rem;
@@ -63,7 +60,6 @@ const AdminLeft = styled.div`
     border-right: 1px solid black;
   }
 `;
-
 const Card = styled.div`
   width: 100%;
   height: 100%;
@@ -82,25 +78,20 @@ const Card = styled.div`
 const CardH2 = styled.h2`
   font-size: 1.1rem;
 `;
-
 const ContactInfo = styled.div`
   flex: 2;
 `;
-
 const CheckInDates = styled.div`
   flex: 2;
   @media (min-width: 767px) {
     margin: 0 0.5rem;
   }
 `;
-
 const CardText = styled.p``;
-
 const CardLink = styled.div`
   flex: 1;
   margin: 3rem 0;
 `;
-
 const Task = styled(Link)`
   display: flex;
   align-items: center;
@@ -122,13 +113,11 @@ const Task = styled(Link)`
     outline: 2px solid black;
   }
 `;
-
 const TaskText = styled.h3`
   color: black;
   text-decoration: none;
   margin-left: 1rem;
 `;
-
 const DashboardLink = styled(StyledLink)`
   width: 160px;
   margin: 0;
@@ -139,12 +128,10 @@ const DashboardLink = styled(StyledLink)`
     margin: 1rem;
   }
 `;
-
 const StyledLoader = styled(Loader)`
   margin-top: 150px;
   text-align: center;
 `;
-
 const SmallLoader = styled(StyledLoader)`
   margin-top: 0;
   margin-bottom: 0.5rem;

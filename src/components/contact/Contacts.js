@@ -16,7 +16,6 @@ function Contacts() {
   useEffect(() => {
     getContacts()
       .then((json) => {
-        console.log(json);
         setContacts(json);
       })
       .catch((error) => console.log(error))

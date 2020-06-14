@@ -33,7 +33,6 @@ const Wrap = styled.div`
     width: 80%;
   }
 `;
-
 const H1 = styled.h1`
   font-size: 1.5rem;
 `;
@@ -52,7 +51,6 @@ const AdminHead = styled.div`
     justify-content: space-around;
   }
 `;
-
 const AdminRight = styled.div`
   flex: 1;
   flex-direction: column;
@@ -61,7 +59,6 @@ const AdminRight = styled.div`
   margin: 1rem;
   padding: 2rem;
 `;
-
 const AdminLeft = styled.div`
   border-bottom: 1px solid black;
   flex: 2;
@@ -76,7 +73,6 @@ const AdminText = styled.p`
   color: black;
   font-size: 1.2rem;
 `;
-
 const Link = styled(StyledLink)`
   width: 160px;
   margin: 0;
@@ -87,13 +83,11 @@ const Link = styled(StyledLink)`
     margin: 1rem;
   }
 `;
-
 const Wrap2 = styled.div`
   width: 100%;
   margin: 2rem auto;
   text-align: center;
 `;
-
 const ContactForm = styled.form`
   width: 100%;
   height: 100%;
@@ -106,11 +100,9 @@ const ContactForm = styled.form`
     margin: 0 auto;
   }
 `;
-
 const H2 = styled.h2`
   margin: 2rem;
 `;
-
 const InputLine = styled.li`
   list-style: none;
   margin: 1rem;
@@ -118,7 +110,6 @@ const InputLine = styled.li`
     margin: 1rem;
   }
 `;
-
 const InputField = styled.input`
   font-family: "Rubik", sans-serif;
   padding: 0.8rem;
@@ -138,11 +129,9 @@ const InputField = styled.input`
     width: 500px;
   }
 `;
-
 const StyledButton = styled(Button)`
   margin: 2rem 0 1rem 0;
 `;
-
 const Errors = styled.p`
   color: red;
   float: left;
@@ -174,7 +163,6 @@ function NewEstablishment() {
       .catch((error) => {
         setStatus("error");
       });
-    console.log("data", newEstablishment);
   }
 
   return (
@@ -210,7 +198,6 @@ function NewEstablishment() {
             />
             {errors.firstname && <Errors>{errors.name.message}</Errors>}
           </InputLine>
-
           <InputLine>
             <InputField
               type="email"
